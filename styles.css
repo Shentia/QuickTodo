@@ -1,0 +1,65 @@
+body {
+  width: 350px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+#task-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.task-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.tag-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.tag {
+  padding: 2px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.tag.active {
+  opacity: 1;
+}
+
+.tag.Todo {
+  background-color: orange;
+}
+.tag.Process {
+  background-color: blue;
+  color: white;
+}
+.tag.Test {
+  background-color: black;
+  color: white;
+}
+.tag.Done {
+  background-color: green;
+  color: white;
+}
+
+.date-container {
+  font-size: 0.8em;
+  color: #666;
+}
+
+#export-csv {
+  font-size: 0.9em;
+}
+
+#speech-input.listening {
+  background-color: #dc3545;
+  color: white;
+}
